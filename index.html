@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schön bei Katja | Beauty & Style</title>
+    <meta name="description"
+        content="Schön bei Katja - Ihr Studio für Beauty & Style. Individuelle Schönheitsbehandlungen in entspannter Atmosphäre.">
+
+    <!-- Google Fonts: Playfair Display (Headings) & Lato (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                Schön bei Katja
+            </a>
+
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#angebote">Angebote</a></li>
+                <li><a href="#ueber-mich">Über Mich</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="#angebote">Angebote</a></li>
+            <li><a href="#ueber-mich">Über Mich</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home / Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-content reveal">
+                <p class="hero-subtitle">Beauty & Style</p>
+                <h1 class="hero-title">Individuelle<br>Schönheit<br>erleben.</h1>
+                <a href="#angebote" class="btn btn-primary">Angebote ansehen</a>
+            </div>
+            <div class="scroll-indicator"></div>
+        </section>
+
+        <!-- Angebote Section -->
+        <section id="angebote" class="services-section">
+            <div class="container section-header reveal">
+                <p class="section-label">Meine Leistungen</p>
+                <h2 class="section-title">Angebote</h2>
+                <div class="divider"></div>
+                <p class="section-desc">Entdecke meine Permanent Make-Up Angebote</p>
+            </div>
+            <div class="container service-grid">
+                <!-- Service 4 (PMU) -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9" />
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Permanent Make-Up</h3>
+                    <p class="service-desc">Natürliches Permanent Make-Up für Augenbrauen, Lider und Lippen.</p>
+                    <button class="btn btn-primary" style="margin-top: 1.5rem;"
+                        onclick="document.getElementById('modal-pmu').classList.add('open');">Preisliste PMU</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Über Mich Section -->
+        <section id="ueber-mich" class="about-section">
+            <div class="container about-grid">
+                <div class="about-image-wrapper reveal">
+                    <img src="assets/portrait_2.jpg" alt="Portrait von Katja" class="about-img">
+                </div>
+                <div class="about-content reveal" style="transition-delay: 0.2s;">
+                    <p class="section-label text-left">Meine Geschichte</p>
+                    <h2 class="section-title text-left">Über Mich</h2>
+                    <div class="divider left"></div>
+                    <p class="about-text">
+                        Herzlich willkommen bei Schön bei Katja!<br><br>
+                        Meine Leidenschaft ist es, deine natürliche Schönheit hervorzuheben und dir einen Moment der
+                        Entspannung zu schenken.
+                        Mit viel Liebe zum Detail und jahrelanger Erfahrung in der Beauty-Branche biete ich dir
+                        Behandlungen, die genau auf deine Bedürfnisse abgestimmt sind.
+                    </p>
+                    <p class="about-text">
+                        In meinem Studio in entspannter Atmosphäre kannst du den Alltag hinter dir lassen.
+                        Ich freue mich darauf, dich kennenzulernen und gemeinsam mit dir deinen individuellen Look zu
+                        kreieren.
+                    </p>
+                    <a href="#kontakt" class="btn btn-primary mt-4">Termin vereinbaren</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section id="kontakt" class="contact-section">
+            <div class="container section-header reveal">
+                <h2 class="section-title">Kontakt</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="container" style="display: flex; justify-content: center; max-width: 600px;">
+                <div class="contact-info reveal" style="width: 100%; text-align: center;">
+                    <h3>Studio Schön bei Katja</h3>
+                    <p>25712 Brickeln</p>
+                    <div class="contact-detail" style="justify-content: center;">
+                        <span class="label">Telefon:</span>
+                        <a href="tel:+4915258561149">0152 58561149</a>
+                    </div>
+                    <div class="contact-detail" style="justify-content: center;">
+                        <span class="label">E-Mail:</span>
+                        <a href="mailto:schoenbeikatja@web.de">schoenbeikatja@web.de</a>
+                    </div>
+                    <div class="social-links"
+                        style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 2rem; flex-wrap: wrap;">
+                        <a href="https://share.google/nbMNkPBZZ5r4dHprd" target="_blank" rel="noopener noreferrer"
+                            style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit; font-family: 'Lato', sans-serif;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z" />
+                            </svg>
+                            Google
+                        </a>
+                        <a href="https://www.instagram.com/schoenbeikatja?igsh=dm5hejk4cGkyMGJ1&utm_source=qr"
+                            target="_blank" rel="noopener noreferrer"
+                            style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit; font-family: 'Lato', sans-serif;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.012-3.584.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.203 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://wa.me/4915258561149?src=qr" target="_blank" rel="noopener noreferrer"
+                            style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: inherit; font-family: 'Lato', sans-serif;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#"
+                    onclick="document.getElementById('modal-impressum').classList.add('open'); return false;">Impressum</a>
+                <a href="#"
+                    onclick="document.getElementById('modal-datenschutz').classList.add('open'); return false;">Datenschutz</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Schön bei Katja. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-pmu" class="modal">
+        <div class="modal-content" style="text-align: center;">
+            <span class="close-btn"
+                onclick="document.getElementById('modal-pmu').classList.remove('open');">&times;</span>
+            <p class="section-label" style="margin-bottom: 0.5rem;">Preisliste für PMU</p>
+            <h2 class="section-title" style="margin-bottom: 1.5rem;">Permanent Make-Up</h2>
+            <div class="divider"></div>
+
+            <div class="price-list">
+                <div class="price-item">
+                    <span class="price-name">Powder/Ombre Brows</span>
+                    <span class="price-value">390,-</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Classic Eyeliner</span>
+                    <span class="price-value">290,-</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Shadow Eyeliner</span>
+                    <span class="price-value">390,-</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Aquarell Lips</span>
+                    <span class="price-value">420,-</span>
+                </div>
+                <div class="price-item">
+                    <span class="price-name">Powder Lips</span>
+                    <span class="price-value">490,-</span>
+                </div>
+            </div>
+
+            <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-top: 2rem;">Alle Preise sind inkl.
+                Nachbehandlungen</p>
+        </div>
+    </div>
+
+    <div id="modal-impressum" class="modal">
+        <div class="modal-content">
+            <span class="close-btn"
+                onclick="document.getElementById('modal-impressum').classList.remove('open');">&times;</span>
+            <h2 class="section-title">Impressum</h2>
+            <div class="divider left"></div>
+            <p><strong>Angaben gemäß § 5 TMG</strong><br><br>
+                Ekaterina Domke-Schmidt<br>
+                Schön bei Katja<br>
+                25712 Brickeln<br><br>
+                <strong>Kontakt:</strong><br>
+                Telefon: 0152 58561149<br>
+                E-Mail: schoenbeikatja@web.de
+            </p>
+        </div>
+    </div>
+
+    <div id="modal-datenschutz" class="modal">
+        <div class="modal-content">
+            <span class="close-btn"
+                onclick="document.getElementById('modal-datenschutz').classList.remove('open');">&times;</span>
+            <h2 class="section-title">Datenschutz</h2>
+            <div class="divider left"></div>
+            <p><strong>Datenschutzerklärung</strong><br><br>
+                Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten
+                vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser
+                Datenschutzerklärung.<br><br>
+                Diese Seite dient derzeit nur als Platzhalter für die vollständigen Datenschutzbestimmungen nach DSGVO
+                Vorgaben.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
