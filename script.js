@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             lightboxImg.src = imgEl.src;
             lightboxImg.alt = imgEl.alt;
             if (lightboxCounter) {
-                lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${galleryItems.length}`;
+                lightboxCounter.textContent = `Bild ${currentLightboxIndex + 1} von ${galleryItems.length}`;
             }
 
             lightboxImg.style.opacity = '1';
